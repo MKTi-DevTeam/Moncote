@@ -25,12 +25,7 @@
 
 <body>
 	<?php include_once("$ROOT/blocks/header.php"); ?>
-
-
-  <div class="container" style="">
-
-  </div>
-
+	<?php include_once("$ROOT/blocks/home.php"); ?>
 	<?php
 	include_once("$ROOT/blocks/footer.php");
 	include_once("$ROOT/html/tracking-body.php");

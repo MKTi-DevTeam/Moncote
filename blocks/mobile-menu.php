@@ -1,9 +1,3 @@
-<style media="screen">
-	.side-nav a li{
-		color: #0097a7;
-	}
-</style>
-
 <ul class="side-nav" id="mobile-demo">
 	<li><a href="#">Inicio</a></li>
 	<li><a href="#">Nieves</a></li>

@@ -1,10 +1,11 @@
 <style media="screen">
+
 	.nav-wrapper {
-		background: #3dce8b;
-		background: -moz-linear-gradient(left, #3dce8b 0%, #16dce2 100%);
-		background: -webkit-linear-gradient(left, #3dce8b 0%,#16dce2 100%);
-		background: linear-gradient(to right, #3dce8b 0%,#16dce2 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3dce8b', endColorstr='#16dce2',GradientType=1 );
+		background: #43dbd1; /* Old browsers */
+		background: -moz-linear-gradient(left, #43dbd1 0%, #29bbce 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #43dbd1 0%,#29bbce 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #43dbd1 0%,#29bbce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43dbd1', endColorstr='#29bbce',GradientType=1 );
 		height: 100px;
 	}
 
@@ -16,6 +17,8 @@
 		width: 20px;
 		padding: 22px 0;
 	}
+
+
 
 </style>
 
@@ -42,23 +45,9 @@
 				<li><a target="_blank" href="https://www.facebook.com/MonCote/?fref=ts"><img src="images/facebook.png" class="social-media-logos" alt=""></a></a></li>
 				<li><a target="_blank" href="https://www.instagram.com/moncotegdl/"><img src="images/instagram.png" class="social-media-logos" alt=""></a></li>
 	    </ul>
-
-			<ul class="side-nav" id="mobile-demo">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nieves</a></li>
-        <li><a href="#">Paletas</a></li>
-        <li><a href="#">Accesorios</a></li>
-				<li><a href="#">Contacto</a></li>
-				<li><a target="_blank" href="https://www.facebook.com/MonCote/?fref=ts"><img src="images/facebook.png" class="social-media-logos" alt=""></a></a></li>
-				<li><a target="_blank" href="https://www.instagram.com/moncotegdl/"><img src="images/instagram.png" class="social-media-logos" alt=""></a></li>
-      </ul>
-
-
 	  </div>
 	</nav>
 </div>
 </header>
 
-<script type="text/javascript">
-	 $(".button-collapse").sideNav();
-</script>
+<?php include_once("$ROOT/blocks/mobile-menu.php");
