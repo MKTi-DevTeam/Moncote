@@ -21,25 +21,22 @@ height: auto;
 	height: 500px;
 }
 
-.paletas-index {
-	background-image: url(images/paletas.jpg);
-	background-repeat: no-repeat;
+.paletas-index, .nieves-index, .accesorios-index {
+  background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
+}
+
+.paletas-index {
+	background-image: url(images/paletas.jpg);
 }
 
 .nieves-index {
 	background-image: url(images/nieves.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100%;
 }
 
 .accesorios-index {
 	background-image: url(images/accesorios.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100%;
 }
 
 .element-hover {
@@ -78,18 +75,54 @@ div.gallery-element img {
 	height: auto;
 }
 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 440px) {
+div.nieves-index, div.paletas-index, div.accesorios-index {
+  margin-bottom: 10px;
+  background-size: 95%;
+}
 
+div.element-hover {
+  height: 90%;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+
+}
 
 </style>
 
-
-<main>
-
-<div class="carousel carousel-slider">
- <a class="carousel-item" href="#one!"><img src="images/carousel1/img1.png" class="responsive-img"></a>
- <a class="carousel-item" href="#two!"><img src="images/carousel1/img2.png" class="responsive-img"></a>
- <a class="carousel-item" href="#three!"><img src="images/carousel1/img3.png" class="responsive-img"></a>
- <a class="carousel-item" href="#four!"><img src="images/carousel1/img4.png" class="responsive-img"></a>
+<div class="slider">
+  <ul class="slides">
+  <li>
+    <img src="images/carousel1/img1.png">
+    <div class="caption center-align">
+      <h3>Moncoté</h3>
+      <h5 class="light grey-text text-lighten-3">Nieves artesanales</h5>
+    </div>
+  </li>
+  <li>
+    <img src="images/carousel1/img2.png">
+    <div class="caption left-align">
+      <h3>Lo mejor del té</h3>
+      <h5 class="light grey-text text-lighten-3">Hecho nieve</h5>
+    </div>
+  </li>
+  <li>
+    <img src="images/carousel1/img3.png">
+    <div class="caption right-align">
+      <h3>Refresantes sabores</h3>
+      <h5 class="light grey-text text-lighten-3">De sabores tradicionales a lo mas exotico</h5>
+    </div>
+  </li>
+  <li>
+    <img src="images/carousel1/img4.png">
+    <div class="caption center-align">
+      <h3>Sin gluten y sin azucar</h3>
+      <h5 class="light grey-text text-lighten-3">La neive más sana que probarás jamás.</h5>
+    </div>
+  </li>
+</ul>
 </div>
 
 
@@ -98,30 +131,39 @@ div.gallery-element img {
   <div class="col l4 m12 s12 center-align nieves-index">
     <div class="element-hover center-align">
       <h2>Nieves</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+      <p>Nuestras nieves están creadas de manera artesanal, cada insumo que utilizamos es 100% natural, para asegurarnos que todo el sabor, color y olor de los Tés se conserven y puedas disfrutar de ésta cultural y romántica bebida, ahora bajo cero.</p>
       <a class="waves-effect waves-light btn">Ver más</a>
     </div>
   </div>
   <div class="col l4 m12 s12 center-align paletas-index">
     <div class="element-hover">
       <h2>Paletas</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+      <p>Si de calor se trata, la mejor manera de refrescarte es con nuestras paletas, creadas de manera artesanal, a base de flores combinadas con fruta 100% natural.</p>
       <a class="waves-effect waves-light btn">Ver más</a>
     </div>
   </div>
   <div class="col l4 m12 s12 center-align accesorios-index">
     <div class="element-hover">
       <h2>Accesorios</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+      <p> La mejor manera de disfrutar-Té es dándole un toque personal a tu taza favorita, tetera o juego de tazas que nunca debe faltar para compartir ése delicioso momento de tomar Té.</p>
       <a class="waves-effect waves-light btn">Ver más</a>
     </div>
   </div>
 </div>
 
-</main>
+<div class="container hide-on-med-and-up">
+  <div class="row ">
+    <div class="col center s12">
+      <h2>Nieves hechas con propiedades del té</h2>
+    </div>
+  </div>
+</div>
+
 
 
 
 <script type="text/javascript">
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
+$(document).ready(function(){
+     $('.slider').slider();
+   });
 </script>

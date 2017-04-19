@@ -6,7 +6,7 @@
 <html lang="es-MX" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-	<title>Mon-coté | Nieves y paletas veganas</title>
+	<title>Mon-coté | Error</title>
 	<meta name="description" content="Nieves y paletas veganas con los beneficios de las ojas de té" />
 
 	<?php
@@ -23,11 +23,11 @@
 
 </head>
 
-<body >
-	<?php include_once("$ROOT/blocks/structure/header.php"); ?>
-	<?php include_once("$ROOT/blocks/home.php"); ?>
+<body>
+	<?php include_once("$ROOT/blocks/header.php"); ?>
+	<?php include_once("$ROOT/blocks/error.php"); ?>
 	<?php
-	include_once("$ROOT/blocks/structure/footer.php");
+	include_once("$ROOT/blocks/footer.php");
 	include_once("$ROOT/html/tracking-body.php");
 	?>
 	<script src="<?php echo $ROOT;?>/javascript/main.js"></script>

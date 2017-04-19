@@ -37,9 +37,9 @@ footer {
         <h5 class="white-text">Mon-coté</h5>
         <ul>
           <li><a class="grey-text text-lighten-3" href="index.php">Inicio</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Nieves</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Paletas</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Accesorios</a></li>
+          <li><a class="grey-text text-lighten-3" href="nieves.php">Nieves</a></li>
+          <li><a class="grey-text text-lighten-3" href="paletas.php">Paletas</a></li>
+          <li><a class="grey-text text-lighten-3" href="oops.php">Accesorios</a></li>
           <li><a class="grey-text text-lighten-3" href="contact.php">Contacto</a></li>
           <li class="inblock"><a target="_blank" href="https://www.facebook.com/MonCote/?fref=ts"><img src="images/facebook.png" class="social-media-logos" alt=""></a></a></li>
           <li class="inblock"><a target="_blank" href="https://www.instagram.com/moncotegdl/"><img src="images/instagram.png" class="social-media-logos" alt=""></a></li>

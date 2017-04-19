@@ -23,11 +23,11 @@
 
 </head>
 
-<body >
-	<?php include_once("$ROOT/blocks/structure/header.php"); ?>
-	<?php include_once("$ROOT/blocks/home.php"); ?>
+<body>
+	<?php include_once("$ROOT/blocks/header.php"); ?>
+	<?php include_once("$ROOT/blocks/contact-area.php"); ?>
 	<?php
-	include_once("$ROOT/blocks/structure/footer.php");
+	include_once("$ROOT/blocks/footer.php");
 	include_once("$ROOT/html/tracking-body.php");
 	?>
 	<script src="<?php echo $ROOT;?>/javascript/main.js"></script>

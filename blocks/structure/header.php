@@ -50,4 +50,4 @@
 </div>
 </header>
 
-<?php include_once("$ROOT/blocks/structure/mobile-menu.php");
+<?php include_once("$ROOT/blocks/mobile-menu.php");

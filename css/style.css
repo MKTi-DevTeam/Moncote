@@ -11,19 +11,46 @@
 body {
 	/*font-family: Arial, Helvetica, sans-serif;*/
 	font-size: 20px;
-	background-color: rgba(162, 216, 218, 0.52);
-	background-size: 50%auto;
+	background-image:url(../images/patron1.png);
+	background-size: 24%auto;
 	background-repeat: repeat;
 	color: black;
+	width: 100vw!important;
+	height: auto;
+}
+
+nav .nav-wrapper{
+	height: 65px!important;
+}
+
+html, body {
+	width: 100vw!important;
+	border: 0 0;
+	margin: 0 0;
+	padding: 0 0;
 }
 
 
+/* MEDIA QUERIES*/
 
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 440px) {
 
-/*TABLET*/
-@media screen and (max-width:992px) {
 }
 
-/*MOBILE*/
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 550px) and (max-width : 767px) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+
+}
 @media screen and (max-width:600px) {
 }
